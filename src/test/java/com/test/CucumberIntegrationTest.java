@@ -21,7 +21,7 @@ import org.testng.junit.JUnit4TestRunner;
 //@RunWith(Cucumber.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @CucumberOptions(features = "src/test/resources")
-//@ContextConfiguration(classes = AppConfig.class)
+@ContextConfiguration(classes = AppConfig.class)
 //public class CucumberIntegrationTest extends AbstractTestNGCucumberTests {
 //    public class CucumberIntegrationTest extends AbstractTestNGSpringContextTests {
     public class CucumberIntegrationTest{
