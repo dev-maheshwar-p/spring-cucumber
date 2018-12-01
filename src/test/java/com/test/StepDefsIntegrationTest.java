@@ -18,7 +18,6 @@ import org.springframework.http.HttpStatus;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.testng.Assert;
 
 import java.util.List;
 
@@ -33,7 +32,7 @@ public class StepDefsIntegrationTest extends SpringIntegration {
     private MongoTemplate mongoTemplate;
 
 
-    @When("^the client calls /baeldung$")
+    @When("^the client calls /test")
     public void the_client_issues_POST_hello() throws Throwable {
         executePost();
     }

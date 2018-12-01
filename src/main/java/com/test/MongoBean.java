@@ -12,11 +12,4 @@ public class MongoBean {
         this.mongoTemplate = mongoTemplate;
     }
 
-
-
-    public void example() {
-
-
-    }
-
 }

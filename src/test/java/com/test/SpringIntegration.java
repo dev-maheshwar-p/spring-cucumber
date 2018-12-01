@@ -16,7 +16,6 @@ import org.springframework.web.client.ResponseErrorHandler;
 import org.springframework.web.client.RestTemplate;
 
 //@RunWith(SpringJUnit4ClassRunner.class)
-//@SpringBootTest(classes = SpringDemoApplication.class, webEnvironment = WebEnvironment.DEFINED_PORT)
 @SpringBootTest(classes = SpringDemoApplication.class, webEnvironment = WebEnvironment.DEFINED_PORT)
 @ContextConfiguration(classes = AppConfig.class)
 //public class SpringIntegrationTest {

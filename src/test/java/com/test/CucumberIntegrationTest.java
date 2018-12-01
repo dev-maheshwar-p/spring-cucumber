@@ -18,12 +18,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.junit.JUnit4TestRunner;
 
-//@RunWith(Cucumber.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 @CucumberOptions(features = "src/test/resources")
 @ContextConfiguration(classes = AppConfig.class)
-//public class CucumberIntegrationTest extends AbstractTestNGCucumberTests {
-//    public class CucumberIntegrationTest extends AbstractTestNGSpringContextTests {
+
     public class CucumberIntegrationTest{
 
 
@@ -31,7 +28,6 @@ import org.testng.junit.JUnit4TestRunner;
 
     private String k8Box;
     private TestNGCucumberRunner testNGCucumberRunner = new TestNGCucumberRunner(CucumberIntegrationTest.class);
-//    private TestNGCucumberRunner testNGCucumberRunner;
 
     @BeforeClass(alwaysRun = true)
     public void setUpClass() throws Exception {
@@ -78,5 +74,7 @@ import org.testng.junit.JUnit4TestRunner;
     public void tearDownClass() throws Exception {
         testNGCucumberRunner.finish();
     }
+
+
 
 }
